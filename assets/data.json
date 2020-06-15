@@ -1,0 +1,248 @@
+{
+    "Intro":[
+         {
+             "title":"Introduction",
+             "content":"Like all high-level languages, Python is easy to read, takes less time to write, and is portable. This versatile programming language has two versions: Python 2 and Python 3. Wiki says: Python 2.x is legacy, Python 3.x is the present and future of the language. That is, Python 2 is no longer in development and all new features will be added in Python 3. Note that, keeping this in mind, the code examples in this tutorial are in Python 3. Wherever Python 2.x code is shown, it will be highlighted."
+             ,"code":"" 
+            },
+        {  
+          "title":"Execution", 
+          "content":"Python executes code top to bottom, when written in the correct syntax. To execute the code in our python tutorials, you will need to install python in your machine as a prerequisite. A small description on how to install Python and get the interpreter running is given here. Once the interpreter is running you can start typing in commands to get the result."
+          ,"code":""
+        },
+          {
+            "title":"Input using the input( ) function",
+           "content":"A function is defined as a block of organized, reusable code used to perform a single, related action. Python has many built-in functions; you can also create your own. Python has an input function which lets you ask a user for some text input. You call this function to tell the program to stop and wait for the user to key in the data. In Python 2, you have a built-in function raw_input(), whereas in Python 3, you have input(). The program will resume once the user presses the ENTER or RETURN key. Look at this example to get input from the keyboard using Python 2 in the interactive mode. Your output is displayed in quotes once you hit the ENTER key.."
+           ,"code":">>> input() \nI am learning at hackerearth"
+        },
+          {
+              "title":"Output using the print() function",
+             "content":"To output your data to the screen, use the print() function. You can write print(argument) and this will print the argument in the next line when you press the ENTER key. Definitions to remember: An argument is a value you pass to a function when calling it. A value is a letter or a number. A variable is a name that refers to a value. It begins with a letter. An assignment statement creates new variables and gives them values.This syntax is valid in both Python 3.x and Python 2.x. For example, if your data is 'Guido,' you can put 'Guido' inside the parentheses ( ) after print."
+            ,"code":">>> print('Guido') \nGuido"  
+        },
+        {
+          "title":"Give a helpful hint during the prompt",
+         "content":"It is often a good idea to tell the user what to input. You can do this by putting the hint in quotes inside the input parentheses. The hint will come in the next line and will wait for the user input. You can then type the input and when you hit the ENTER key, it will capture the input. In this example, \"tell me a beautiful number\" is the hint. This gets printed in the next line when asking for the input. If you type 6, this will be assigned to the variable beautiful_number which we can print later."
+        ,"code":" >>> beautiful_number = input(\"tell me a beautiful number \")\ntell me a beautiful number 6\n>>> print(beautiful_number)\n'6'"  
+    },
+    {
+      "title":"More on using print",
+     "content":""
+    ,"code":">>> print(\"5\"*6)\n555555\n>>> print(5,6,7)\n5 6 7\n>>> print('LOVE', 30, 82.2)\nLOVE 30 82.2\n>>> print('LOVE', 30, 82.2, sep=',')\n'LOVE', 30, 82.2"  
+}
+
+         
+        ],
+    "Variables":[
+        {
+            "title":"Variables",
+            "content":"A variable can be considered a storage container for data. Every variable will have a name. For example, we can have a variable named speed_of_light. A variable is a good way to store information while making it easy to refer to that information in our code later. A close analogy to variables may be a named box where you can store information."
+            ,"code":"" 
+           },
+       {  
+         "title":"Assignment", 
+         "content":"In Python, assignment can be done by writing the variable name followed by the value separated by an equal = symbol. The skeleton or pseudo-code is. \n“Variable name” = “ value or information ”"
+         ,"code":">>> # assign a string\n >>>fav_lang = \"python\"\n>>> print(fav_lang)'python'\n>>> # assign the value 299792458 to the variable speed_of_light\n>>> speed_of_light = 299792458\n>>> print(speed_of_light)\n299792458\n\n>>> # assign a decimal number 3.14 to the variable pi\n>>> pi = 3.14\n>>> print(pi)\n3.14\n\n>>> # assign a string\n>>> fav_lang = \"python\"\n>>> print(fav_lang)\n'python'"
+       },
+         {
+           "title":"Working with variables",
+          "content":"Variables will support any method the underlying type supports. For example, if an integer value is stored in a variable, then the variable will support integer functions such as addition. In the following example, you assign the number 2 to the variable var and then add 3 to var. This will print 5, the result of 3 being added to the value stored in var which is 2."
+          ,"code":">>> var = 2\n>>> print(var + 3)\n5"
+       }
+,
+       {
+        "title":"",
+       "content":"You can make a change in a variable and assign it to the same variable. This is done generally when some kind of data type change is done./nFor example, you can take a number as input. This will take in the digit as a string. You can then take the string number and convert it to int and assign it to the same number."
+       ,"code":">>> number = input() \n2\n>>> type(number)\n<class 'str'>\n>>> number = int(number)\n>>> type(number)\n<class 'int'>"
+    }
+        
+    ],
+    "Numbers":[
+        {
+            "title":"Numbers:",
+            "content":"What are numbers in Python? All numbers that are handled will belong to some type. A type is a way to define various data structures and containers and define the functionality associated with them. Types are implemented in Python as classes. If you want to verify if an integer belongs to the class int you can use isinstance. You will need to pass number as the first argument and class name as the second argument, and it will check if the object is an instance of the class. This is done by the following construct."
+            ,"code":">>> # assign the integer 2 to a var int_var\n>>>  int_var = 2\n>>> # assign the integer 3 to a var int_var1\n>>>  int_var1 = 3  \n>>> # print the sum of the two variables int_var and int_var1\n >>>  print(int_var + int_var1)\n5\n>>> # assign a decimal number to a variable float_var\n>>>  float_var = 5.\n>>> # assign another decimal number to a variable float_var1\n>>>  float_var1 = 6.7 \n >>> # print the sum of the two decimal numbers\n>>>  print(float_var + float_var1)\n12.3\n>>> # assign a complex number to a variable complex_var\n>>>  complex_var = (1 + 2j)\n>>> # assign another complex number to a variable complex_var1\n>>>  complex_var1 = (2 + 3j)\n>>> # print the sum of the two complex numbers\n>>>  print(complex_var + complex_var1)\n(3+5j)\n>>> # add two numbers belonging to complex and int class\n>>> result = (2 + 3j) + 4\n>>> # print the result\n>>> print(result)\n(6+3j)\n>>> # check if the result is of class complex\n>>> print(isinstance(result, complex))\nTrue\n>>> # add two numbers belonging to complex and float class\n>>> result = (2 + 3j) + 4.12\n>>> # print the result\n>>> print(result)\n(6.12+3j)\n>>> # check if the result is of class complex\n>>> print(isinstance(result, complex))\nTrue"
+           }
+       
+    ],
+    "String":[
+        {
+            "title":"String",
+            "content":"Like all high-level languages, Python is easy to read, takes less time to write, and is portable. This versatile programming language has two versions: Python 2 and Python 3. Wiki says: Python 2.x is legacy, Python 3.x is the present and future of the language. That is, Python 2 is no longer in development and all new features will be added in Python 3. Note that, keeping this in mind, the code examples in this tutorial are in Python 3. Wherever Python 2.x code is shown, it will be highlighted."
+            ,"code":"" 
+           },
+       {  
+         "title":"Execution", 
+         "content":"Python executes code top to bottom, when written in the correct syntax. To execute the code in our python tutorials, you will need to install python in your machine as a prerequisite. A small description on how to install Python and get the interpreter running is given here. Once the interpreter is running you can start typing in commands to get the result."
+         ,"code":""
+       },
+         {
+           "title":"Input using the input( ) function",
+          "content":"A function is defined as a block of organized, reusable code used to perform a single, related action. Python has many built-in functions; you can also create your own. Python has an input function which lets you ask a user for some text input. You call this function to tell the program to stop and wait for the user to key in the data. In Python 2, you have a built-in function raw_input(), whereas in Python 3, you have input(). The program will resume once the user presses the ENTER or RETURN key. Look at this example to get input from the keyboard using Python 2 in the interactive mode. Your output is displayed in quotes once you hit the ENTER key.."
+          ,"code":">>> input() \nI am learning at hackerearth"
+       },
+         {
+             "title":"Output using the print() function",
+            "content":"To output your data to the screen, use the print() function. You can write print(argument) and this will print the argument in the next line when you press the ENTER key. Definitions to remember: An argument is a value you pass to a function when calling it. A value is a letter or a number. A variable is a name that refers to a value. It begins with a letter. An assignment statement creates new variables and gives them values.This syntax is valid in both Python 3.x and Python 2.x. For example, if your data is 'Guido,' you can put 'Guido' inside the parentheses ( ) after print."
+           ,"code":">>> print('Guido') \nGuido"  
+       }
+    ],
+    "Conditional":[
+        {
+            "title":"Conditional",
+            "content":"Like all high-level languages, Python is easy to read, takes less time to write, and is portable. This versatile programming language has two versions: Python 2 and Python 3. Wiki says: Python 2.x is legacy, Python 3.x is the present and future of the language. That is, Python 2 is no longer in development and all new features will be added in Python 3. Note that, keeping this in mind, the code examples in this tutorial are in Python 3. Wherever Python 2.x code is shown, it will be highlighted."
+            ,"code":"" 
+           },
+       {  
+         "title":"Execution", 
+         "content":"Python executes code top to bottom, when written in the correct syntax. To execute the code in our python tutorials, you will need to install python in your machine as a prerequisite. A small description on how to install Python and get the interpreter running is given here. Once the interpreter is running you can start typing in commands to get the result."
+         ,"code":""
+       },
+         {
+           "title":"Input using the input( ) function",
+          "content":"A function is defined as a block of organized, reusable code used to perform a single, related action. Python has many built-in functions; you can also create your own. Python has an input function which lets you ask a user for some text input. You call this function to tell the program to stop and wait for the user to key in the data. In Python 2, you have a built-in function raw_input(), whereas in Python 3, you have input(). The program will resume once the user presses the ENTER or RETURN key. Look at this example to get input from the keyboard using Python 2 in the interactive mode. Your output is displayed in quotes once you hit the ENTER key.."
+          ,"code":">>> input() \nI am learning at hackerearth"
+       },
+         {
+             "title":"Output using the print() function",
+            "content":"To output your data to the screen, use the print() function. You can write print(argument) and this will print the argument in the next line when you press the ENTER key. Definitions to remember: An argument is a value you pass to a function when calling it. A value is a letter or a number. A variable is a name that refers to a value. It begins with a letter. An assignment statement creates new variables and gives them values.This syntax is valid in both Python 3.x and Python 2.x. For example, if your data is 'Guido,'' you can put 'Guido' inside the parentheses ( ) after print."
+           ,"code":">>> print('Guido') \nGuido"  
+       }
+    ],
+    "Functions":[
+        {
+            "title":"Functions",
+            "content":"Like all high-level languages, Python is easy to read, takes less time to write, and is portable. This versatile programming language has two versions: Python 2 and Python 3. Wiki says: Python 2.x is legacy, Python 3.x is the present and future of the language. That is, Python 2 is no longer in development and all new features will be added in Python 3. Note that, keeping this in mind, the code examples in this tutorial are in Python 3. Wherever Python 2.x code is shown, it will be highlighted."
+            ,"code":"" 
+           },
+       {  
+         "title":"Execution", 
+         "content":"Python executes code top to bottom, when written in the correct syntax. To execute the code in our python tutorials, you will need to install python in your machine as a prerequisite. A small description on how to install Python and get the interpreter running is given here. Once the interpreter is running you can start typing in commands to get the result."
+         ,"code":""
+       },
+         {
+           "title":"Input using the input( ) function",
+          "content":"A function is defined as a block of organized, reusable code used to perform a single, related action. Python has many built-in functions; you can also create your own. Python has an input function which lets you ask a user for some text input. You call this function to tell the program to stop and wait for the user to key in the data. In Python 2, you have a built-in function raw_input(), whereas in Python 3, you have input(). The program will resume once the user presses the ENTER or RETURN key. Look at this example to get input from the keyboard using Python 2 in the interactive mode. Your output is displayed in quotes once you hit the ENTER key.."
+          ,"code":">>> input() \nI am learning at hackerearth"
+       },
+         {
+             "title":"Output using the print() function",
+            "content":"To output your data to the screen, use the print() function. You can write print(argument) and this will print the argument in the next line when you press the ENTER key. Definitions to remember: An argument is a value you pass to a function when calling it. A value is a letter or a number. A variable is a name that refers to a value. It begins with a letter. An assignment statement creates new variables and gives them values.This syntax is valid in both Python 3.x and Python 2.x. For example, if your data is \"Guido\", you can put \"Guido\" inside the parentheses ( ) after print."
+           ,"code":">>> print('Guido') \nGuido"  
+       }
+    ],
+    "Lists":[
+        {
+            "title":"Lists",
+            "content":"Like all high-level languages, Python is easy to read, takes less time to write, and is portable. This versatile programming language has two versions: Python 2 and Python 3. Wiki says: Python 2.x is legacy, Python 3.x is the present and future of the language. That is, Python 2 is no longer in development and all new features will be added in Python 3. Note that, keeping this in mind, the code examples in this tutorial are in Python 3. Wherever Python 2.x code is shown, it will be highlighted."
+            ,"code":"" 
+           },
+       {  
+         "title":"Execution", 
+         "content":"Python executes code top to bottom, when written in the correct syntax. To execute the code in our python tutorials, you will need to install python in your machine as a prerequisite. A small description on how to install Python and get the interpreter running is given here. Once the interpreter is running you can start typing in commands to get the result."
+         ,"code":""
+       },
+         {
+           "title":"Input using the input( ) function",
+          "content":"A function is defined as a block of organized, reusable code used to perform a single, related action. Python has many built-in functions; you can also create your own. Python has an input function which lets you ask a user for some text input. You call this function to tell the program to stop and wait for the user to key in the data. In Python 2, you have a built-in function raw_input(), whereas in Python 3, you have input(). The program will resume once the user presses the ENTER or RETURN key. Look at this example to get input from the keyboard using Python 2 in the interactive mode. Your output is displayed in quotes once you hit the ENTER key.."
+          ,"code":">>> input() \nI am learning at hackerearth"
+       },
+         {
+             "title":"Output using the print() function",
+            "content":"To output your data to the screen, use the print() function. You can write print(argument) and this will print the argument in the next line when you press the ENTER key. Definitions to remember: An argument is a value you pass to a function when calling it. A value is a letter or a number. A variable is a name that refers to a value. It begins with a letter. An assignment statement creates new variables and gives them values.This syntax is valid in both Python 3.x and Python 2.x. For example, if your data is \"Guido,\" you can put \"Guido\" inside the parentheses ( ) after print."
+           ,"code":">>> print('Guido') \nGuido"  
+       }
+    ],
+    "Dictionaries":[
+        {
+            "title":"Introduction",
+            "content":"Like all high-level languages, Python is easy to read, takes less time to write, and is portable. This versatile programming language has two versions: Python 2 and Python 3. Wiki says: Python 2.x is legacy, Python 3.x is the present and future of the language. That is, Python 2 is no longer in development and all new features will be added in Python 3. Note that, keeping this in mind, the code examples in this tutorial are in Python 3. Wherever Python 2.x code is shown, it will be highlighted."
+            ,"code":"" 
+           },
+       {  
+         "title":"Execution", 
+         "content":"Python executes code top to bottom, when written in the correct syntax. To execute the code in our python tutorials, you will need to install python in your machine as a prerequisite. A small description on how to install Python and get the interpreter running is given here. Once the interpreter is running you can start typing in commands to get the result."
+         ,"code":""
+       },
+         {
+           "title":"Input using the input( ) function",
+          "content":"A function is defined as a block of organized, reusable code used to perform a single, related action. Python has many built-in functions; you can also create your own. Python has an input function which lets you ask a user for some text input. You call this function to tell the program to stop and wait for the user to key in the data. In Python 2, you have a built-in function raw_input(), whereas in Python 3, you have input(). The program will resume once the user presses the ENTER or RETURN key. Look at this example to get input from the keyboard using Python 2 in the interactive mode. Your output is displayed in quotes once you hit the ENTER key.."
+          ,"code":">>> input() \nI am learning at hackerearth"
+       },
+         {
+             "title":"Output using the print() function",
+            "content":"To output your data to the screen, use the print() function. You can write print(argument) and this will print the argument in the next line when you press the ENTER key. Definitions to remember: An argument is a value you pass to a function when calling it. A value is a letter or a number. A variable is a name that refers to a value. It begins with a letter. An assignment statement creates new variables and gives them values.This syntax is valid in both Python 3.x and Python 2.x. For example, if your data is 'Guido,' you can put 'Guido' inside the parentheses ( ) after print."
+           ,"code":">>> print('Guido') \nGuido"  
+       }
+    ],
+    "Set":[
+        {
+            "title":"Introduction",
+            "content":"Like all high-level languages, Python is easy to read, takes less time to write, and is portable. This versatile programming language has two versions: Python 2 and Python 3. Wiki says: Python 2.x is legacy, Python 3.x is the present and future of the language. That is, Python 2 is no longer in development and all new features will be added in Python 3. Note that, keeping this in mind, the code examples in this tutorial are in Python 3. Wherever Python 2.x code is shown, it will be highlighted."
+            ,"code":"" 
+           },
+       {  
+         "title":"Execution", 
+         "content":"Python executes code top to bottom, when written in the correct syntax. To execute the code in our python tutorials, you will need to install python in your machine as a prerequisite. A small description on how to install Python and get the interpreter running is given here. Once the interpreter is running you can start typing in commands to get the result."
+         ,"code":""
+       },
+         {
+           "title":"Input using the input( ) function",
+          "content":"A function is defined as a block of organized, reusable code used to perform a single, related action. Python has many built-in functions; you can also create your own. Python has an input function which lets you ask a user for some text input. You call this function to tell the program to stop and wait for the user to key in the data. In Python 2, you have a built-in function raw_input(), whereas in Python 3, you have input(). The program will resume once the user presses the ENTER or RETURN key. Look at this example to get input from the keyboard using Python 2 in the interactive mode. Your output is displayed in quotes once you hit the ENTER key.."
+          ,"code":">>> input() \nI am learning at hackerearth"
+       },
+         {
+             "title":"Output using the print() function",
+            "content":"To output your data to the screen, use the print() function. You can write print(argument) and this will print the argument in the next line when you press the ENTER key. Definitions to remember: An argument is a value you pass to a function when calling it. A value is a letter or a number. A variable is a name that refers to a value. It begins with a letter. An assignment statement creates new variables and gives them values.This syntax is valid in both Python 3.x and Python 2.x. For example, if your data is 'Guido,' you can put 'Guido' inside the parentheses ( ) after print."
+           ,"code":">>> print('Guido') \nGuido"  
+       }
+    ],
+    "OOPs":[
+        {
+            "title":"Python Classes and Methods",
+            "content":"Python is an “object-oriented programming language.” This means that almost all the code is implemented using a special construct called classes. Programmers use classes to keep related things together. This is done using the keyword “class,” which is a grouping of object-oriented constructs. "     
+            ,"code":"" 
+           },
+       {  
+         "title":"What is a class?", 
+         "content":"A class is a code template for creating objects. Objects have member variables and have behaviour associated with them. In python a class is created by the keyword class.\nAn object is created using the constructor of the class. This object will then be called the instance of the class. In Python we create instances in the following manner"
+        ,"code":"Instance = class(arguments)"
+       },
+         {
+           "title":"How to create a class",
+          "content":"The simplest class can be created using the class keyword. For example, let's create a simple, empty class with no functionalities."
+          ,"code":">>> class Snake:\n...     pass\n... \n>>> snake = Snake()\n>>> print(snake)\n<__main__.Snake object at 0x7f315c573550>"
+       },
+         {
+             "title":"Attributes",
+            "content":"You can define the following class with the name Snake. This class will have an attribute name"
+           ,"code":">>> class Snake:\n...     name = \"python\" # set an attribute `name` of the class\n..."  
+       },
+       {
+           "title":"",
+          "content":"You can assign the class to a variable. This is called object instantiation. You will then be able to access the attributes that are present inside the class using the dot . operator. For example, in the Snake example, you can access the attribute name of the class Snake."
+         ,"code":">>> # instantiate the class Snake and assign it to variable snake\n>>> snake = Snake()\n\n>>> # access the class attribute name inside the class Snake.\n>>> print(snake.name)\npython"  
+     },
+     {
+         "title":"Methods",
+        "content":"Once there are attributes that “belong” to the class, you can define functions that will access the class attribute. These functions are called methods. When you define methods, you will need to always provide the first argument to the method with a self keyword.\nFor example, you can define a class Snake, which has one attribute name and one method change_name. The method change name will take in an argument new_name along with the keyword self."
+       ,"code":">>> class Snake:\n...     name = \"python\"\n...     \n...     def change_name(self, new_name): # note that the first argument is self\n...         self.name = new_name # access the class attribute with the self keyword\n..."  
+   },
+   {
+       "title":"",
+      "content":"Now, you can instantiate this class Snake with a variable snake and then change the name with the method change_name."
+     ,"code":">>> # instantiate the class\n>>> snake = Snake()\n\n>>> # print the current object name \n>>> print(snake.name)\npython\n\n>>> # change the name using the change_name method\n>>> snake.change_name(\"anaconda\")\n>>> print(snake.name)\nanaconda"  
+ }
+ ,
+     {
+         "title":"Instance attributes and the init method",
+        "content":"You can also provide the values for the attributes at runtime. This is done by defining the attributes inside the init method. The following example illustrates this."
+       ,"code":"class Snake:\n\n       def __init__(self, name):\n           self.name = name\n   \n       def change_name(self, new_name):\n           self.name = new_name"  
+   },
+   {
+       "title":"",
+      "content":"Now you can directly define separate attribute values for separate objects. For example,"
+     ,"code":">>> # two variables are instantiated\n>>> python = Snake(\"python\")\n>>> anaconda = Snake(\"anaconda\")\n \n>>> # print the names of the two variables\n>>> print(python.name)\npython\n>>> print(anaconda.name)\nanaconda"  
+ }
+    ]
+}
